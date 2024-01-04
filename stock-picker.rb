@@ -3,6 +3,8 @@ def stock_picker(prices)
   max_profit = 0
   best_days = []
 
+  # Note the first day is day 0
+
   prices.each_with_index do |price, day|
     if price < min_price
       min_price = price
